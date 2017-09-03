@@ -1,0 +1,23 @@
+[package]
+name = "todo"
+version = "0.0.0"
+
+[dependencies]
+rocket = "0.3.2"
+rocket_codegen = "0.3.2"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+r2d2 = "*"
+diesel = { version = "*", features = ["mysql"] }
+diesel_codegen = { version = "*", features = ["mysql"] }
+r2d2-diesel = "*"
+dotenv="0.10"
+
+[dev-dependencies]
+parking_lot = {version = "*", features = ["nightly"]}
+rand = "*"
+
+[dependencies.rocket_contrib]
+default_features = false
+features = [ "tera_templates","json" ]

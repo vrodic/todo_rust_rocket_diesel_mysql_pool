@@ -1,0 +1,5 @@
+CREATE TABLE tasks (
+    id int PRIMARY KEY AUTO_INCREMENT,
+    description VARCHAR(255) NOT NULL,
+    completed BOOL NOT NULL DEFAULT 0
+)
